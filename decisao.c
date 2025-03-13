@@ -10,10 +10,10 @@ int main(){
     printf("Informe o estoque: \n");
     scanf("%u", &estoque);
 
-    if(temperatura > 30.0 && umidade > 40.0){
-        printf("Temperatura e umidade estão altas!\n");
+    if(temperatura >= 25.0 && temperatura <= 35.0 && umidade < 40.0){
+        printf("Temperatura e umidade em boas condições!\n");
    } else {
-        printf(" Temperatura está dentro dos parametros!\n");
+        printf("Verificar temperatura e umidade\n");
    }
     if(estoque < estoquemin){
         printf("Estoque Baixo!!!\n");
